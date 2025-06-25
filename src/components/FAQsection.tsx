@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import anchorIcon from '../assets/icons/anchor-icon.svg';
+
 
 const FAQSection = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);

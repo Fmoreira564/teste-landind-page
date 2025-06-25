@@ -2,21 +2,31 @@
 /* PARTE DE FONTES */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
 :root {
-  --font-primary: 'Poppins', sans-serif;     /* Para textos principais */
-  --font-secondary: 'Montserrat', sans-serif; /* Para títulos e destaques */
-  --text-base: 1rem; /* 16px - tamanho base */
+  /* Reduza as bases de tamanho */
+  --text-base: 0.875rem; /* 14px (era 16px) */
+  --text-lg: 1rem;       /* 16px */
+  --text-xl: 1.125rem;   /* 18px */
+  --text-2xl: 1.5rem;    /* 24px */
+  --text-3xl: 1.875rem;  /* 30px */
+  --text-4xl: 2.25rem;   /* 36px */
+  --text-5xl: 3rem;      /* 48px */
 }
+
+
+
 
 .header-container {
   font-family: var(--font-secondary);
+  padding: 2rem 0;
 }
 
 .brand-title {
   font-family:'Poppins', sans-serif; 
   font-weight: 400;
-  font-size: 1.5rem;
-  letter-spacing: 0.5;
+  font-size: 2.5rem;
+  line-height: 1.5;
 }
 
 
@@ -28,8 +38,8 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #FAF9F6;
   font-weight: 400; /* Peso regular */
-  font-size: 16px; /* Tamanho base */
-  line-height: 1.6; /* Espaçamento entre linhas */
+  font-size:var(--text-base); /* Tamanho base */
+  line-height: 1.5; /* Espaçamento entre linhas */
   color: #333; /* Cor neutra para texto */
 }
 
@@ -258,12 +268,13 @@ body {
 
 .brand-title {
   font-size: 3.5rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'arial', sans-serif;
   font-weight: 700;
   color: #1A3D32;
   margin: 0;
   padding: 0;
   line-height: 1;
+
 }
 
 /* Seção hero */
@@ -285,14 +296,14 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 2.2rem;
+  font-size: 1.3rem;
   margin-bottom: 9px;
   color: #042d13;
   line-height: 1.6;
 }
 
 .hero-text h2 {
-  font-size: 1.6rem;
+  font-size:1.3rem;
   font-weight: 500;
   color: #042d13;
   margin-bottom: 30px;
@@ -328,18 +339,24 @@ body {
 }
 
 .hero-image {
-  max-width: 700%;
-  width: 760px;
-  min-height: auto;
-  border-radius: 12px;
+  max-width: 100%;
+  width: auto;
+  
 }
 
 /* Layout responsivo */
 @media (max-width: 992px) {
   .nav-links {
     gap: 20px;
+    
   }
-  
+  .app {
+    /* justify-content: center;  */
+    align-items: center;
+
+  }
+
+
   .hero-container {
     gap: 40px;
   }
@@ -404,7 +421,7 @@ body {
 
 .benefits-section .section-header h2 {
   color: #1A3D32;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -433,7 +450,7 @@ body {
 .benefit-card {
   background: white;
   border-radius: 8px;
-  padding: 25px;
+  padding: 1.5rem;
   box-shadow: 0 3px 10px rgba(2, 0, 0, 0.08);
   transition: all 0.2s ease;
 }
@@ -729,7 +746,7 @@ body {
 }
 
 .divider-title {
-  padding: 3rem 4rem;
+  padding: 1rem 0;
   font-size: 1.8rem;
   font-weight: 600;
   color: #ffffff;
@@ -741,7 +758,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: 'Poppins', sans-serif;
   display: block;
-  width: 1200px;
+  width: 100%;
   padding: 1.5rem 0;
   text-align: center;
   background-color:#CFE6DD;
@@ -772,7 +789,7 @@ body {
 }
 
 .title-line:last-child {
-  font-size: 2.0rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #1A3D32;
   position: relative;
@@ -892,7 +909,7 @@ body {
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #1a3d32;
   margin-bottom: 1rem;
   text-align: center;
@@ -919,7 +936,7 @@ body {
 .plan-card {
   background:#d3cfc500;
   border-radius: 12px;
-  padding: 2.5rem;
+  padding: 1.5rem;
   width: 300px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.192);
   position: relative;
@@ -1009,11 +1026,11 @@ body {
 .faq-container .section-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 3rem;
   color: #1a3d32;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 20px;
+  letter-spacing: 5px;
   margin-bottom: 0.5rem;
   
 }
@@ -1203,7 +1220,7 @@ body {
 
 .main-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.2;
@@ -1238,7 +1255,7 @@ body {
 }
 
 .support-text {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
@@ -1353,5 +1370,18 @@ body {
   }
 }
 
+body {
+  overflow-x: hidden; /* Previne rolagem horizontal */
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2rem 1rem; /* Padding mais conservador */
+}
 
